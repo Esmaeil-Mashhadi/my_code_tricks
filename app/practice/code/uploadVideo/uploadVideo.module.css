@@ -1,0 +1,126 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 20px;
+    transition: .2s ease;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .videoContainer{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+  }
+  
+.videoContainer::before {
+    content: "";
+    position: absolute;
+    background-color: aqua;
+    width: 20%;
+    height: 120%;
+    animation: rotation 10s linear infinite;
+  }
+.video{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  border-radius: 10px;
+}
+
+  @keyframes rotation {
+    from{
+      transform: rotate(0deg);
+    }
+    to{
+      transform: rotate(360deg);
+    }
+  }
+
+
+.videoContainer::after{
+    content: "";
+    position: absolute;
+    background-color: black;
+    border-radius: 10px;
+    inset: 1px;
+}
+
+.button{
+    border-radius: 10px;
+    position: relative;
+    width: 90px;
+    margin: auto;
+    padding: 10px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(black , aqua , black);
+    color: black;
+    cursor: pointer;
+    overflow: hidden;
+  
+}
+
+.button p{
+  pointer-events: none;
+}
+
+
+.spanElement{
+    border-radius: 100%;
+    background-color: rgba(173, 230, 194, 0.907);
+    position: absolute;
+    transform: translate(-50% , -50%);
+    animation:  .5s showUP linear forwards ;
+    pointer-events: none;
+}
+
+@keyframes showUP {
+    from{
+        opacity: 0.5;
+        width: 0%;
+        height: 0%;
+    }
+    to{
+         opacity: 0;
+        width: 500px;
+        height: 500px;
+        
+    }
+}
+
+.pause{
+ background-color: transparent;
+ border: none;
+ position: absolute;
+ z-index: 2;
+ cursor: pointer;
+}
+
+.play{
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  z-index: 2;
+ cursor: pointer;
+
+}
+
+
+
+
+

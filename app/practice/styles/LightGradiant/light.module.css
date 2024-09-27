@@ -1,0 +1,25 @@
+.section{
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section h2{
+ font-size: 10rem;
+ overflow: hidden;   
+}
+
+.light{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at var(--x) var(--y) , transparent 10% , black  20%);
+    /*var is the position of center of the cercle
+     transparent or color is the color of the center and 10% is the widith of center
+     second one is the outer layer color and with till around cirlce*/;
+    cursor: pointer;
+}

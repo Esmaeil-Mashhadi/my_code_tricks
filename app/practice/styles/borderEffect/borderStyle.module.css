@@ -1,0 +1,47 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.form{
+    width: 400px;
+    height: 500px;
+    background-color: rgb(58, 57, 57);
+    margin: 300px;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+.form::before{
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 140%;
+    background-color: aqua;
+    animation: rotate 5s linear infinite ;
+}
+
+.form::after{
+    content: "";
+    background-color: black;
+    position: absolute;
+    inset: 10px;
+    border-radius: 10px;
+}
+
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(-360deg)
+    }
+}
+

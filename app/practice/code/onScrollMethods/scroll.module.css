@@ -1,0 +1,16 @@
+.container{
+    height:600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: solid;
+    gap: 100px;
+    overflow: scroll;
+    overflow-x: hidden;
+    background-color: black;
+    color: black;
+    background-color:var(--backColor);
+    color: var(--text);
+}

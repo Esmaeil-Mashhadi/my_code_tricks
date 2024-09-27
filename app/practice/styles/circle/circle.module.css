@@ -1,0 +1,40 @@
+.container{
+  
+    width:400px;
+   height: 500px;
+   margin: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 100px;
+}
+
+
+
+.circle{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(203, 186, 33);
+    border-radius: 100%;
+    background:conic-gradient(aqua  3.6deg , blue 0deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+   
+}
+
+.circle span{
+    position: relative;
+}
+
+
+.circle::before{
+    content: "";
+    position: absolute;
+    background-color:black ;
+    inset: 10px;
+    border-radius: 100%;
+}
+

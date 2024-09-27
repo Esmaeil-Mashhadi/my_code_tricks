@@ -1,0 +1,18 @@
+.scrollElement {
+    opacity: 0;
+    transition:  0.2s ease-in-out;
+    padding: 50px;
+    background-color: aqua;
+    border: solid;
+    margin: 10px;
+    width: fit-content;
+    transform: translateX(-100px);
+    color: black;
+
+  }
+  
+  .scrollElement.show {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+

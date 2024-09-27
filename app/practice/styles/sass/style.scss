@@ -1,0 +1,62 @@
+@import 'variables';
+@import 'mixins';
+
+.container{
+ padding: 10px;
+ font-weight: bold;
+ color: darkcyan;
+ font-size: 20px;
+ background-color: $primaryColor;
+   ul{
+    display: flex;
+    flex-direction: column;
+     gap: 10px;
+     background-color: darkcyan;
+     color: white;
+     padding: 10px;
+
+       li{
+        text-decoration: underline;
+        transition: .2s ease;     
+       letter-spacing: 0px;
+         @include hoverEffect('')
+       }
+  
+   }
+}
+
+.topContainer{
+    border-radius: 5px;
+    border: solid;
+    padding: 5px;
+    p{
+        color: rgb(241, 125, 241);
+    };
+    p:first-child{
+        @include textStyle(yellow)
+    };
+    p:nth-child(2){
+        @include textStyle(rgb(233, 146, 146))
+    }
+}
+
+
+
+// @for $item from 1 through 5{ 
+//     .loop-#{$item}{
+//         color: red ;
+//         background-color: #fff;
+//         height: 20px * $item;
+//     }
+
+// }
+
+$item : 5;
+@while($item > 0){
+      .loop-#{$item}{
+        color: red ;
+        background-color: #fff;
+         height: 20px * $item;
+     }
+     $item: $item - 1
+}

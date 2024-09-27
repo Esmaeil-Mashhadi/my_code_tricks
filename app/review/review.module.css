@@ -1,0 +1,21 @@
+.container{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 50%;
+    margin-top: 50vh;
+    border-radius: 50%;
+    background: conic-gradient(yellow var(--degree), red 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container::after{
+    content: "";
+    position: absolute;
+    width: 85%;
+    height: 85%;
+    background-color: black;
+    border-radius: 50%;
+}

@@ -1,0 +1,26 @@
+.container {
+    width:100vw;
+    overflow: hidden;
+  }
+  
+  .lists {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    animation: slideAnimation 1s linear forwards ;
+  }
+  
+  .lists li {
+    white-space: nowrap;
+    padding: 0 10px;
+  }
+  
+  @keyframes slideAnimation {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }

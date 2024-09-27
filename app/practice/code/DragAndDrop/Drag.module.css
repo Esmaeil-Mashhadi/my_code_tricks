@@ -1,0 +1,30 @@
+.app{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.widgets{
+    display: flex;
+    justify-content: space-around;
+}
+
+.widget{
+    border: solid;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+.page{
+    border: solid;
+    height: 200px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.droppedWidget{
+    border: solid;
+    border-radius: 10px;
+    padding: 20px;
+}

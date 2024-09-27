@@ -1,0 +1,5 @@
+.swiper-button-prev::after{
+    color: purple;
+    scale: .8;
+    margin-left: 10px;
+}

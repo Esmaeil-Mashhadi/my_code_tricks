@@ -1,0 +1,4 @@
+.card{
+    @apply flex justify-center flex-col border-2 gap-2 items-center lg:flex-row
+    
+}

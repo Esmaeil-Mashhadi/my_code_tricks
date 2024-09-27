@@ -1,0 +1,19 @@
+@mixin textStyle($color) {
+    color: $color;
+    text-shadow: 0px 0px 5px black;
+}
+
+@mixin hoverEffect($effect) {
+    &:hover {
+      @if ($effect == "translate") {
+        transform: translateX(20px);
+      }
+      @else if( $effect == "scale") {
+        transform: scale(1.1);
+      }@else{
+        
+      }
+      cursor: pointer;
+      color: black;
+    }
+  }

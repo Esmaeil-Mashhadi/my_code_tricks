@@ -1,0 +1,31 @@
+.imageContainer{
+ display: flex;
+ overflow: hidden;
+ cursor:grabbing;
+}
+
+.container{
+ position: relative;
+ overflow: hidden;
+
+}
+.right{
+position: absolute;
+right: 10px;
+top: 50%;
+}
+
+.left{
+    position: absolute;
+    left: 10px;
+    top: 50%;
+}
+.imageContainer img{
+ transition: .2s ease;
+transform: translateX(var(--translateX));
+
+}
+.container button svg{
+    scale: 2;
+}
+
